@@ -1,0 +1,211 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Gary Tong
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{#2 }
+  }
+}
+
+\newcommand{\specialItem}[2]{
+  \item[]{
+    \textbf{#1}{#2 }
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item []
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSpecialItem}[2]{\specialItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0mm]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://gcttong.github.io/}{\Huge Gary Tong}} & Email : \href{mailto:tongg@myumanitoba.ca}{tongg@myumanitoba.ca}\\
+  \href{http://gcttong.github.io/}{http://gcttong.github.io} & GitHub: http://github.com/gcttong \\
+  
+\end{tabular*}
+
+ %-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Manitoba}{Expected: December 2018}
+      {Bachelor of Science, Major in Computer Science (Co-op)  }{Winnipeg, MB}
+       \resumeSubheading
+      {University of Western Ontario}{ June 2014}
+      {Honors Bachelor of Science, Double Major in Biology/Medical Science  }{London, ON}
+   
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {RBC}{May - August 2017}
+      {Student Labs Software Developer Co-op (5-person summer student labs team)}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{}
+          {Completed the frontend and backend of a new internal web application that allows employees to
+share new project ideas company-wide Used: Angular 4, Node.js, and IBM Bluemix}
+ \resumeItemListEnd
+        
+    
+
+   \resumeSubheading
+      {Desire2Learn}{January - April 2017}
+      {Software Developer Co-op (4-developer backend platform team)}{Kitchener, ON}
+      \resumeItemListStart
+        \resumeItem{}
+          {Created backend client data disaster recovery tool by leveraging AWS micro services (Lambda, SQS, SNS) that is
+currently in use by developers within the company Used: Node.js and AWS}
+ \resumeItemListEnd
+ 
+ \resumeSubheading
+      {Children's Hospital Research Institute of Manitoba}{May - August 2017}
+      {Summer Student}{Winnipeg, MB}
+      \resumeItemListStart
+        \resumeItem{}
+          {Identified Autism-causing DNA locations by analyzing patient genetic sequence information
+from Autism Genome Project big datasets, led to 2nd place in student research competition Used: R}
+ \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+
+
+
+%-----------PROJECTS-----------------
+
+\section{Hackathons (More at: http://devpost.com/gcttong)}
+  \resumeSubHeadingListStart
+     \resumeSubheading{Memo (Amazon Alexa, Node.js, AWS Lambda)} {DementiaHack 2017}
+      {Grand Prize Winner  }{24 Hours}
+      \resumeItemListStart
+      \resumeItem{}
+          {Built backend for Amazon Alexa Skill that creates a memory bank for dementia patients and
+provides real-time data about patient prognosis based on question frequency  \textbf{Link: http://bit.ly/2xZbpth}}
+   \resumeItemListEnd
+    \resumeSubheading{LifeLine (C, Arduino)} {DeltaHacks 2017}
+      {2nd place overall, Best Hardware Hack}{24 Hours}
+      \resumeItemListStart
+      \resumeItem{}
+          {Built Arduino-based car monitoring system that automatically sounds alarm when driver falls asleep and
+phones loved ones/sends SMS notifications \textbf{Link: http://bit.ly/2wOqJ7c}}
+   \resumeItemListEnd
+    \resumeSubheading{Socksory (Arduino)} {PennApps 2017}
+      {Top 10 Overall }{36 Hours}
+      \resumeItemListStart
+      \resumeItem{}
+          {Built pressure sensor monitoring system using Arduino to determine force exerted on different regions of the foot,
+aimed at reducing ulcers in diabetic patients and mitigating orthotic issues \newline \textbf{Link: http://bit.ly/2xwrUvn}}
+   \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+  
+%-----------LEADERSHIP-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSpecialItem{Programming: }
+      {Java, Python, JavaScript, Node.js, Angular 4, R, C++, HTML, CSS }
+      \resumeSpecialItem{Databases: }
+      {MySQL, PostgreSQL}
+      \resumeSpecialItem{Languages: }
+      {English, Cantonese, Mandarin, French}
+   
+  \resumeSubHeadingListEnd
+
+
+
+%-----------LEADERSHIP-----------------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSpecialItem{GitHub Campus Expert: }
+      {Working with GitHub Education to grow local student developer community by planning tech events and workshops in Winnipeg, MB}
+      \resumeSpecialItem{MLH Local Hack Day 2017 Lead Organizer: }
+      {University of Manitoba's first collegiate 12-hour hackathon, attracted 80 students to bring
+novel ideas to fruition using software and hardware}
+   
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
